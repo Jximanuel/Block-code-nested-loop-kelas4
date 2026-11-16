@@ -465,6 +465,68 @@ body.dragging, body.dragging *{cursor:grabbing !important}
 .k-cell .bot.hop{animation:chefHop .3s ease}
 .t-tanam{background:#16A34A} .t-maju{background:var(--b)} .t-turun{background:#7C3AED}
 
+
+/* ----- LKPD Digital ----- */
+.lk-id-row{display:flex; gap:14px; flex-wrap:wrap}
+.lk-id-row label{font:600 17px Fredoka; display:flex; flex-direction:column; gap:4px; flex:1 1 200px}
+.lk-tip{font-size:16px; color:var(--mut); margin-top:6px}
+.lk-sec{display:none} .lk-sec.on{display:block; animation:fadeUp .35s}
+.lk-h{display:flex; align-items:center; gap:10px; font-size:24px; margin-bottom:6px; flex-wrap:wrap}
+.lk-h .emo{width:42px; height:42px}
+.lk-p{color:var(--mut); font-size:17px; margin-bottom:12px}
+.lk-code{font-size:15px; padding:10px}
+.lk-in{font:700 19px Nunito; border:3px solid #d9d2fa; border-radius:12px; padding:6px 10px; min-height:46px; color:var(--ink); background:#fff; text-align:center}
+.lk-in:focus{border-color:var(--p); outline:none; box-shadow:0 0 0 4px rgba(108,76,241,.2)}
+.lk-in.ok{border-color:var(--g); background:#EFFCF4}
+.lk-in.no{border-color:var(--r); background:#FFF0F0}
+.lk-bug .lk-in{text-align:left; font-size:16px}
+.lk-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-weight:700; margin-top:10px}
+.lk-fb{font-size:15px; font-weight:700; min-height:20px; margin-top:6px}
+.lk-fb.g{color:var(--gd)} .lk-fb.r{color:var(--rd)}
+.lk-bintang{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px}
+@media (max-width:760px){ .lk-bintang{grid-template-columns:1fr} }
+.lk-b{background:var(--pl); border-radius:18px; padding:12px}
+.lk-levels,.lk-orders{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+@media (max-width:760px){ .lk-levels,.lk-orders{grid-template-columns:1fr} }
+.lk-lv,.lk-ord{border:3px solid #e9e3ff; border-radius:20px; padding:12px; background:#fff}
+.lk-lv-h{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:8px}
+.lk-lv-h b{font:600 21px Fredoka; color:var(--p)} .lk-lv-h span{font-size:15px; color:var(--mut)}
+.lk-mini{display:grid; gap:3px; background:#7a4a24; padding:5px; border-radius:10px; max-width:220px; margin-bottom:10px}
+.lk-mini span{aspect-ratio:1; border-radius:4px; background:#A8642F}
+.lk-mini span.t{background:#B97A3F; outline:2px dashed #ECFCCB; outline-offset:-3px}
+.lk-grid2{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 12px}
+.lk-grid2 label,.lk-bug{display:flex; flex-direction:column; gap:3px; font:600 15px Fredoka; color:var(--mut)}
+.lk-bug{margin-top:8px}
+.lk-na{font-size:14px; color:var(--mut); padding:12px 0}
+.lk-plates{display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px}
+.lk-plates .mini-plate{font-size:18px; max-width:none}
+.lk-pola-row{display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-weight:700; margin-bottom:8px}
+.lk-pola{min-width:90px; min-height:42px; display:inline-flex; align-items:center; gap:2px; padding:4px 10px; border-radius:12px; background:#2a2660; color:#fff; font-size:22px}
+.lk-pola i{font-size:14px; color:#c9c4f0}
+.lk-pb{width:48px; height:48px; border-radius:12px; border:3px solid #e3dcfb; background:#fff; font-size:22px; cursor:pointer}
+.lk-link{border:0; background:none; color:var(--p); font:inherit; font-weight:800; text-decoration:underline; cursor:pointer; padding:0}
+.lk-stage{height:220px}
+.lk-refl{display:flex; flex-direction:column; gap:12px}
+.lk-refl label{display:flex; flex-direction:column; gap:4px; font:600 17px Fredoka}
+.lk-ta{font:600 17px Nunito; border:3px solid #d9d2fa; border-radius:14px; padding:10px; min-height:64px; resize:vertical; color:var(--ink)}
+.lk-feel{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
+.lk-feel button{font:600 18px Fredoka; border:3px solid #e3dcfb; background:#fff; border-radius:16px; padding:8px 16px; min-height:52px; cursor:pointer}
+.lk-feel button.on{border-color:var(--p); background:var(--pl)}
+.lk-act{display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:18px}
+.lk-score{font:600 20px Fredoka; color:var(--pd)}
+.lk-h-top{display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+.lk-h-top > div:nth-child(2){flex:1}
+.lk-nilai{text-align:center; background:var(--pl); border-radius:20px; padding:10px 18px}
+.lk-nilai b{display:block; font:700 52px Fredoka; color:var(--p); line-height:1}
+.lk-nilai span{font-size:14px; color:var(--mut)}
+@media print{
+  body{background:#fff}
+  body *{visibility:hidden}
+  #lkHasil, #lkHasil *{visibility:visible}
+  #lkHasil{position:absolute; left:0; top:0; width:100%; box-shadow:none}
+  .emo{animation:none}
+}
+
 .end-stats{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:18px 0}
 @media (max-width:640px){ .end-stats{grid-template-columns:repeat(2,minmax(0,1fr))} }
 .end-stats .stat{text-align:center}
@@ -485,6 +547,7 @@ body.dragging, body.dragging *{cursor:grabbing !important}
       <button data-tab="materi"><img data-emoji="books" alt=""> Materi</button>
       <button data-tab="kuis"><img data-emoji="bulb" alt=""> Kuis Interaktif</button>
       <button data-tab="dragdrop"><img data-emoji="puzzle" alt=""> Drag and Drop</button>
+      <button data-tab="lkpd"><img data-emoji="memo" alt=""> LKPD</button>
       <button data-tab="tentang"><img data-emoji="info" alt=""> Tentang</button>
     </nav>
   </div>
@@ -530,6 +593,7 @@ body.dragging, body.dragging *{cursor:grabbing !important}
     <button class="card short" data-tab="materi"><img data-emoji="books" alt=""><div><h4>Materi</h4><p>4 bagian + demo seru</p></div></button>
     <button class="card short" data-tab="kuis"><img data-emoji="bulb" alt=""><div><h4>Kuis Interaktif</h4><p>10 soal, kumpulkan bintang</p></div></button>
     <button class="card short" data-tab="dragdrop"><img data-emoji="puzzle" alt=""><div><h4>Game Kode Piko</h4><p>Dapur Kode & Kebun Robot</p></div></button>
+    <button class="card short" data-tab="lkpd"><img data-emoji="memo" alt=""><div><h4>LKPD Digital</h4><p>Isi, periksa, cetak hasilnya</p></div></button>
     <button class="card short" data-tab="tentang"><img data-emoji="info" alt=""><div><h4>Tentang</h4><p>Pengembang & petunjuk</p></div></button>
     <button class="card short" data-tab="dragdrop" data-duel="1"><img data-emoji="trophy" alt=""><div><h4>Duel Kelompok</h4><p>Kelompok A vs B</p></div></button>
   </div>
@@ -754,6 +818,15 @@ body.dragging, body.dragging *{cursor:grabbing !important}
 </section>
 
 <!-- =========================================================
+     TAB LKPD DIGITAL (isi dibuat oleh initLKPD di script)
+     ========================================================= -->
+<section class="tab" id="tab-lkpd" aria-label="LKPD Digital">
+  <h2 class="sec-title"><img data-emoji="memo" style="width:50px" alt=""> LKPD Digital</h2>
+  <p class="sec-sub">Lembar Kerja Peserta Didik · dikerjakan berpasangan sambil bermain game BlockCode.</p>
+  <div id="lkpdRoot"></div>
+</section>
+
+<!-- =========================================================
      TAB TENTANG
      ========================================================= -->
 <section class="tab" id="tab-tentang" aria-label="Tentang">
@@ -769,7 +842,7 @@ body.dragging, body.dragging *{cursor:grabbing !important}
         <tr><td>Mata pelajaran</td><td>Coding</td></tr>
         <tr><td>Materi</td><td>Perulangan Bercabang (lanjutan)</td></tr>
         <tr><td>Kelas / Fase</td><td>4 SD / Fase B</td></tr>
-        <tr><td>Jenis media</td><td>Web interaktif (materi, demo, kuis, game blok)</td></tr>
+        <tr><td>Jenis media</td><td>Web interaktif (materi, demo, kuis, game blok, LKPD digital)</td></tr>
         <tr><td>Versi</td><td>1.0 · <span class="yr"></span></td></tr>
       </table>
     </div>
@@ -780,7 +853,8 @@ body.dragging, body.dragging *{cursor:grabbing !important}
         <div class="how"><img data-emoji="books" alt=""><p><b>2.</b> Baca <b>Materi</b> dan mainkan setiap demonya.</p></div>
         <div class="how"><img data-emoji="bulb" alt=""><p><b>3.</b> Kerjakan <b>Kuis</b>. Ketik namamu dulu, ya!</p></div>
         <div class="how"><img data-emoji="puzzle" alt=""><p><b>4.</b> Di <b>Drag and Drop</b>, pilih game Dapur atau Kebun, seret blok ke kanvas, lalu tekan ▶ Jalankan.</p></div>
-        <div class="how"><img data-emoji="trophy" alt=""><p><b>5.</b> Pilih mode <b>Duel</b> untuk lomba Kelompok A vs B di papan tulis digital.</p></div>
+        <div class="how"><img data-emoji="trophy" alt=""><p><b>5.</b> Isi <b>LKPD</b> bersama pasanganmu, tekan Periksa, lalu tunjukkan halaman Hasil ke guru.</p></div>
+        <div class="how"><img data-emoji="trophy" alt=""><p><b>6.</b> Pilih mode <b>Duel</b> untuk lomba Kelompok A vs B di papan tulis digital.</p></div>
       </div>
       <h3 style="font-size:22px;margin:18px 0 8px">🙏 Kredit Aset</h3>
       <p style="font-size:16px;color:var(--mut)">Emoji 3D: Microsoft Fluent Emoji (lisensi MIT) · Tailwind CSS · canvas-confetti · Google Fonts (Fredoka & Nunito) · Maskot Piko dan ilustrasi dapur dibuat khusus untuk media ini.</p>
@@ -1026,7 +1100,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 /* =================================================================
    BAGIAN F — NAVIGASI SPA (tab disimpan di URL hash)
    ================================================================= */
-const TABS = ['home', 'tujuan', 'materi', 'kuis', 'dragdrop', 'tentang'];
+const TABS = ['home', 'tujuan', 'materi', 'kuis', 'dragdrop', 'lkpd', 'tentang'];
 function openTab(name, push = true) {
   if (!TABS.includes(name)) name = 'home';
   $$('.tab').forEach(t => t.classList.toggle('on', t.id === 'tab-' + name));
@@ -1926,9 +2000,377 @@ function boot() {
   $('#logoPiko').innerHTML = pikoSVG({ w: 40 });
   $('#heroPiko').innerHTML = pikoSVG({ w: 190, mood: 'happy', arms: 'up' });
   $$('.yr').forEach(y => y.textContent = new Date().getFullYear());
-  initGoals(); initMateri(); initQuiz(); Game.init();
+  initGoals(); initMateri(); initQuiz(); Game.init(); initLKPD();
   hydrateEmoji();
   openTab(location.hash.slice(1) || 'home', false);
+}
+/* =================================================================
+   BAGIAN L — LKPD DIGITAL (diisi murid berpasangan, diperiksa otomatis)
+   Data soal LKPD bisa diubah guru di bawah ini.
+   ================================================================= */
+const LKPD1_BINTANG = [[3, 4], [5, 2], [4, 6]];               // ronde Tebak Bintang: [loop luar, loop dalam]
+const LKPD1_LEVEL = [                                          // sesuai game Kebun Robot Piko level 1-6
+  { lv: 1, rows: 1, cols: 4, pola: 'semua', bunga: 4, luar: null, dalam: 4, ket: 'satu baris' },
+  { lv: 2, rows: 2, cols: 3, pola: 'semua', bunga: 6, luar: 2, dalam: 3, ket: '' },
+  { lv: 3, rows: 3, cols: 4, pola: 'semua', bunga: 12, luar: 3, dalam: 4, ket: '' },
+  { lv: 4, rows: 2, cols: 6, pola: 'semua', bunga: 12, luar: 2, dalam: 6, ket: '' },
+  { lv: 5, rows: 3, cols: 6, pola: 'kolom2', bunga: 9, luar: 3, dalam: 3, ket: 'selang-seling' },
+  { lv: 6, rows: 5, cols: 4, pola: 'baris2', bunga: 12, luar: 3, dalam: 4, ket: 'baris loncat' }
+];
+const LKPD2_PESANAN = [                                        // sesuai game Dapur Kode Piko pesanan 7-9
+  { no: 7, piring: 1, isi: 'cdcdcd' },
+  { no: 8, piring: 2, isi: 'cdcd' },
+  { no: 9, piring: 3, isi: 'ccdccd' }
+];
+
+const LK = {
+  key: 'blockcode_lkpd_v1', data: {},
+  load() { try { this.data = JSON.parse(localStorage.getItem(this.key) || '{}'); } catch (e) { this.data = {}; } },
+  save() { try { localStorage.setItem(this.key, JSON.stringify(this.data)); } catch (e) { } },
+  set(k, v) { this.data[k] = v; this.save(); },
+  get(k, d = '') { return this.data[k] ?? d; }
+};
+
+// Gambar kebun mini untuk tiap level
+function miniKebun(L) {
+  const f = POLA[L.pola] || POLA.semua;
+  let h = `<div class="lk-mini" style="grid-template-columns:repeat(${L.cols},1fr)">`;
+  for (let r = 0; r < L.rows; r++) for (let c = 0; c < L.cols; c++) h += `<span class="${f(r, c) ? 't' : ''}"></span>`;
+  return h + '</div>';
+}
+const inp = (id, ph = '', w = 70) => `<input class="lk-in" id="${id}" inputmode="numeric" placeholder="${ph}" style="width:${w}px" autocomplete="off">`;
+
+function initLKPD() {
+  LK.load();
+  const root = $('#lkpdRoot');
+  root.innerHTML = `
+  <div class="card lk-id">
+    <div class="lk-id-row">
+      <label>Nama murid 1<input class="input" id="lk_n1" maxlength="20" placeholder="Contoh: Rina"></label>
+      <label>Nama murid 2<input class="input" id="lk_n2" maxlength="20" placeholder="Contoh: Budi"></label>
+      <label>Kelas<input class="input" id="lk_kls" maxlength="6" placeholder="4A" style="width:110px"></label>
+    </div>
+    <div class="err" id="lk_idErr"></div>
+    <p class="lk-tip">💾 Jawaban tersimpan otomatis di perangkat ini. Kerjakan bersama pasanganmu, lalu tekan <b>Periksa</b>.</p>
+  </div>
+  <div class="subtabs" id="lkTabs" role="tablist">
+    <button data-lk="1" class="on"><span class="num">1</span>LKPD 1 · Kebun Robot</button>
+    <button data-lk="2"><span class="num">2</span>LKPD 2 · Pola & Animasi</button>
+    <button data-lk="3"><span class="num">✓</span>Hasil</button>
+  </div>
+
+  <!-- ===== LKPD 1 ===== -->
+  <section class="lk-sec on" id="lk1">
+    <div class="card">
+      <h3 class="lk-h"><img data-emoji="star" alt=""> A. Tebak Bintang <span class="pill">Pertemuan 1</span></h3>
+      <p class="lk-p">Berapa bintang yang digambar? Hitung dengan <b>loop luar × loop dalam</b>.</p>
+      <div class="lk-bintang">${LKPD1_BINTANG.map(([o, i], k) => `
+        <div class="lk-b"><div class="code-view lk-code"><div class="cv-blk cv-out">🔁 ulangi ${o} kali</div><div class="cv-nest"><div class="cv-blk cv-in">🔁 ulangi ${i} kali</div><div class="cv-nest y"><div class="cv-blk cv-act">⭐ gambar bintang</div></div></div></div>
+        <div class="lk-row">Ronde ${k + 1}: ${inp('lk_b' + k, '?')} bintang</div><div class="lk-fb" id="lk_b${k}_fb"></div></div>`).join('')}
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3 class="lk-h"><img data-emoji="sunflower" alt=""> B. Kebun Robot Piko</h3>
+      <p class="lk-p">Sebelum menekan <b>Jalankan</b> di game, navigator mengisi prediksi dan angka loop. Kotak hijau di gambar = petak yang harus ditanami.</p>
+      <div class="lk-levels">${LKPD1_LEVEL.map(L => `
+        <div class="lk-lv">
+          <div class="lk-lv-h"><b>Level ${L.lv}</b><span>${L.rows} baris × ${L.cols} kolom${L.ket ? ' · ' + L.ket : ''}</span></div>
+          ${miniKebun(L)}
+          <div class="lk-grid2">
+            <label>Prediksi bunga ${inp(`lk_l${L.lv}_p`, '?')}</label>
+            <label>Loop luar ${L.luar === null ? '<span class="lk-na">tidak perlu</span>' : inp(`lk_l${L.lv}_o`, '?')}</label>
+            <label>Loop dalam ${inp(`lk_l${L.lv}_i`, '?')}</label>
+            <label>Bintang di game <select class="lk-in" id="lk_l${L.lv}_s"><option value="">-</option><option>1</option><option>2</option><option>3</option></select></label>
+          </div>
+          <label class="lk-bug">Bug yang kami temukan <input class="lk-in" id="lk_l${L.lv}_bug" maxlength="80" placeholder="Contoh: lupa blok maju" style="width:100%"></label>
+          <div class="lk-fb" id="lk_l${L.lv}_fb"></div>
+        </div>`).join('')}
+      </div>
+      <div class="lk-act"><button class="btn3d g" id="lk1Check">✅ Periksa LKPD 1</button><span class="lk-score" id="lk1Score"></span></div>
+    </div>
+  </section>
+
+  <!-- ===== LKPD 2 ===== -->
+  <section class="lk-sec" id="lk2">
+    <div class="card">
+      <h3 class="lk-h"><img data-emoji="cookie" alt=""> A. Pola di Dapur Kode <span class="pill">Pertemuan 2</span></h3>
+      <p class="lk-p">Lihat isi setiap piring. Susun <b>pola kecil</b> dengan tombol kue/donat, lalu isi berapa kali pola diulang, jumlah piring, dan total camilan.</p>
+      <div class="lk-orders">${LKPD2_PESANAN.map(P => `
+        <div class="lk-ord">
+          <div class="lk-lv-h"><b>Pesanan ${P.no}</b><span>${P.piring} piring</span></div>
+          <div class="lk-plates">${Array(P.piring).fill(0).map(() => `<span class="mini-plate">${[...P.isi].map(ch => ITEM[ch]).join('')}</span>`).join('')}</div>
+          <div class="lk-pola-row">Pola kecil: <span class="lk-pola" id="lk_o${P.no}_pola"></span>
+            <button class="lk-pb" data-o="${P.no}" data-add="c" aria-label="tambah kue">🍪</button><button class="lk-pb" data-o="${P.no}" data-add="d" aria-label="tambah donat">🍩</button><button class="lk-pb" data-o="${P.no}" data-add="x" aria-label="hapus">⌫</button></div>
+          <div class="lk-grid2">
+            <label>Pola diulang (loop dalam) ${inp(`lk_o${P.no}_u`, '?')}</label>
+            <label>Jumlah piring (loop luar) ${inp(`lk_o${P.no}_p`, '?')}</label>
+            <label>Total camilan ${inp(`lk_o${P.no}_t`, '?')}</label>
+          </div>
+          <div class="lk-fb" id="lk_o${P.no}_fb"></div>
+        </div>`).join('')}
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3 class="lk-h"><img data-emoji="film" alt=""> B. Animasi Piko Menari</h3>
+      <div class="code-view lk-code" style="max-width:460px"><div class="cv-blk cv-out">🔁 ulangi <b>n</b> kali</div><div class="cv-nest"><div class="cv-blk cv-in">🔁 ulangi 4 kali</div><div class="cv-nest y"><div class="cv-blk cv-act2">➡️ gerak 10 langkah</div></div><div class="cv-blk cv-act3">👕 ganti kostum</div></div></div>
+      <p class="lk-p" style="margin-top:10px">Pilih angka <b>n</b>, tulis prediksimu, lalu cek di <button class="lk-link" data-tab="materi" data-mi4="1">Materi bagian 4</button>.</p>
+      ${[0, 1].map(k => `<div class="lk-row lk-anim">Coba ${k + 1}: n = <select class="lk-in" id="lk_a${k}_n">${[1, 2, 3, 4, 5, 6].map(v => `<option>${v}</option>`).join('')}</select> → gerak ${inp(`lk_a${k}_g`, '?')} kali, ganti kostum ${inp(`lk_a${k}_k`, '?')} kali <span class="lk-fb" id="lk_a${k}_fb"></span></div>`).join('')}
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3 class="lk-h"><img data-emoji="palette" alt=""> C. Rancang Animasiku</h3>
+      <p class="lk-p">Pilih tokoh, atur angkanya, hitung, lalu tekan <b>Coba animasiku</b>!</p>
+      <div class="demo-grid">
+        <div>
+          <div class="lk-row">Tokoh: <select class="lk-in" id="lk_c_actor"><option value="kincir">Kincir angin</option><option value="piko">Piko berjalan</option></select></div>
+          <div class="code-view lk-code">
+            <div class="cv-blk cv-out">🔁 ulangi <span class="numctl" id="lk_c_o"><button data-d="-1" aria-label="kurangi">−</button><b>3</b><button data-d="1" aria-label="tambah">+</button></span> kali</div>
+            <div class="cv-nest"><div class="cv-blk cv-in">🔁 ulangi <span class="numctl" id="lk_c_i"><button data-d="-1" aria-label="kurangi">−</button><b>4</b><button data-d="1" aria-label="tambah">+</button></span> kali</div>
+              <div class="cv-nest y"><div class="cv-blk cv-act2" id="lk_c_cmd1">🌀 putar 15 derajat</div></div>
+              <div class="cv-blk cv-act3" id="lk_c_cmd2">🎨 ganti warna</div></div>
+          </div>
+          <div class="lk-row" style="margin-top:10px">Perintah di loop dalam dijalankan ${inp('lk_c_pred', '?')} kali</div>
+          <div class="lk-fb" id="lk_c_fb"></div>
+          <button class="btn3d g sm" id="lk_c_play" style="margin-top:8px">▶ Coba animasiku</button>
+        </div>
+        <div><div class="anim-stage lk-stage" id="lk_c_stage"></div><p class="say" id="lk_c_say"></p></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3 class="lk-h"><img data-emoji="speech" alt=""> D. Refleksi</h3>
+      <div class="lk-refl">
+        <label>1. Hal baru yang aku pahami<textarea class="lk-ta" id="lk_r1" maxlength="200"></textarea></label>
+        <label>2. Bug yang aku temukan dan cara memperbaikinya<textarea class="lk-ta" id="lk_r2" maxlength="200"></textarea></label>
+        <label>3. Kerja samaku dengan pasangan/kelompok<textarea class="lk-ta" id="lk_r3" maxlength="200"></textarea></label>
+        <div><span class="ft">4. Perasaanku hari ini</span><div class="lk-feel" id="lk_feel">
+          <button data-f="senang">😄 Senang</button><button data-f="biasa">🙂 Biasa</button><button data-f="kurang">😕 Kurang</button></div></div>
+        <label>5. Targetku berikutnya<textarea class="lk-ta" id="lk_r5" maxlength="200"></textarea></label>
+        <div class="lk-row">6. Skor kuis: murid 1 ${inp('lk_q1', '0-100', 90)} murid 2 ${inp('lk_q2', '0-100', 90)}</div>
+      </div>
+      <div class="lk-act"><button class="btn3d g" id="lk2Check">✅ Periksa LKPD 2</button><span class="lk-score" id="lk2Score"></span></div>
+    </div>
+  </section>
+
+  <!-- ===== HASIL ===== -->
+  <section class="lk-sec" id="lk3">
+    <div class="card lk-hasil" id="lkHasil"></div>
+    <div class="lk-act" style="justify-content:center">
+      <button class="btn3d" id="lkPrint">🖨️ Cetak / Simpan PDF</button>
+      <button class="btn3d w" id="lkCopy">📋 Salin ringkasan</button>
+      <button class="btn3d r sm" id="lkReset">🗑️ Hapus semua jawaban</button>
+    </div>
+    <div class="err" id="lkCopyMsg" style="text-align:center"></div>
+  </section>`;
+  hydrateEmoji(root);
+
+  // Pulihkan isian yang tersimpan + simpan setiap perubahan
+  $$('.lk-in, .input, .lk-ta', root).forEach(el => {
+    if (!el.id) return;
+    const v = LK.get(el.id, null); if (v !== null) el.value = v;
+    el.addEventListener('input', () => { LK.set(el.id, el.value); el.classList.remove('ok', 'no'); });
+    el.addEventListener('change', () => LK.set(el.id, el.value));
+  });
+  // Sub-tab
+  $('#lkTabs').addEventListener('click', e => { const b = e.target.closest('[data-lk]'); if (b) { SFX.click(); lkShow(+b.dataset.lk); } });
+  // Pembuat pola kue/donat
+  LKPD2_PESANAN.forEach(P => drawPola(P.no));
+  root.addEventListener('click', e => {
+    const pb = e.target.closest('.lk-pb'); if (!pb) return;
+    const k = `lk_o${pb.dataset.o}_pola`; let s = LK.get(k, '');
+    if (pb.dataset.add === 'x') s = s.slice(0, -1); else if (s.length < 4) s += pb.dataset.add; else { SFX.bad(); return; }
+    LK.set(k, s); drawPola(pb.dataset.o); SFX.pop();
+  });
+  // Perasaan
+  const feel = LK.get('lk_feel', ''); $$('#lk_feel button').forEach(b => b.classList.toggle('on', b.dataset.f === feel));
+  $('#lk_feel').onclick = e => { const b = e.target.closest('[data-f]'); if (!b) return; LK.set('lk_feel', b.dataset.f); $$('#lk_feel button').forEach(x => x.classList.toggle('on', x === b)); SFX.pop(); };
+  // Rancang animasi
+  const actorSel = $('#lk_c_actor');
+  const CO = numCtl($('#lk_c_o'), 1, 6, v => LK.set('lk_c_o', v)), CI = numCtl($('#lk_c_i'), 1, 8, v => LK.set('lk_c_i', v));
+  CO.set(+LK.get('lk_c_o', 3)); CI.set(+LK.get('lk_c_i', 4));
+  const setActor = () => {
+    const kin = actorSel.value === 'kincir';
+    $('#lk_c_cmd1').textContent = kin ? '🌀 putar 15 derajat' : '➡️ gerak 10 langkah';
+    $('#lk_c_cmd2').textContent = kin ? '🎨 ganti warna' : '👕 ganti kostum';
+    drawActor(0, 0, 0);
+  };
+  actorSel.addEventListener('change', setActor);
+  let animRun = 0;
+  const drawActor = (rot, x, step) => {
+    const st = $('#lk_c_stage'), kin = actorSel.value === 'kincir';
+    const cols = ['#EF4444', '#3B82F6', '#22C55E', '#F59E0B', '#8B5CF6', '#EC4899'];
+    if (kin) {
+      const c = cols[step % cols.length];
+      st.innerHTML = `<div class="sun"></div><svg viewBox="0 0 200 190" style="position:absolute;left:50%;bottom:0;translate:-50% 0;height:100%">
+        <polygon points="92,80 108,80 120,190 80,190" fill="#C08457"/>
+        <g style="transform-origin:100px 80px;transform:rotate(${rot}deg);transition:transform .2s">
+          ${[0, 90, 180, 270].map(a => `<path d="M100 80 L100 18 L124 30 L104 80Z" fill="${c}" stroke="#fff" stroke-width="2" transform="rotate(${a} 100 80)"/>`).join('')}
+        </g><circle cx="100" cy="80" r="8" fill="#334155"/></svg>`;
+    } else {
+      st.innerHTML = `<div class="sun"></div><div class="actor" style="left:${10 + x}px">${pikoSVG({ w: 80, arms: step % 2 ? 'up' : 'down', mood: step % 2 ? 'happy' : 'normal' })}</div>`;
+    }
+  };
+  $('#lk_c_play').onclick = async () => {
+    const my = ++animRun, o = CO.get(), i = CI.get(), kin = actorSel.value === 'kincir';
+    const W = $('#lk_c_stage').clientWidth - 100, stepPx = Math.max(3, W / (o * i));
+    let rot = 0, x = 0, n = 0, chg = 0; drawActor(0, 0, 0);
+    for (let a = 0; a < o; a++) {
+      for (let b = 0; b < i; b++) {
+        n++; if (kin) rot += 15; else x += stepPx;
+        drawActor(rot, x, chg); $('#lk_c_say').textContent = `Loop luar ${a + 1}/${o} · loop dalam ${b + 1}/${i} · total ${n}`;
+        SFX.tone(480 + b * 60, .05); await wait(kin ? 220 : 200); if (my !== animRun) return;
+      }
+      chg++; drawActor(rot, x, chg); SFX.pop(); await wait(300); if (my !== animRun) return;
+    }
+    $('#lk_c_say').innerHTML = `✅ Perintah di loop dalam berjalan <b>${o} × ${i} = ${o * i} kali</b>, ${kin ? 'ganti warna' : 'ganti kostum'} ${o} kali.`;
+  };
+  setActor();
+  // Tombol periksa
+  $('#lk1Check').onclick = () => checkLK1(true);
+  $('#lk2Check').onclick = () => checkLK2(true);
+  $('#lkPrint').onclick = () => { try { window.print(); } catch (e) { $('#lkCopyMsg').textContent = 'Cetak tidak tersedia di sini. Pakai tombol Salin ringkasan.'; } };
+  $('#lkCopy').onclick = async () => {
+    const t = lkSummaryText();
+    try { await navigator.clipboard.writeText(t); $('#lkCopyMsg').style.color = 'var(--gd)'; $('#lkCopyMsg').textContent = 'Ringkasan tersalin. Tempel di WhatsApp/catatan untuk guru.'; }
+    catch (e) { $('#lkCopyMsg').style.color = 'var(--r)'; $('#lkCopyMsg').textContent = 'Gagal menyalin otomatis. Tunjukkan layar hasil ini ke guru, ya.'; }
+  };
+  $('#lkReset').onclick = () => {
+    const b = $('#lkReset');
+    if (b.dataset.sure !== '1') { b.dataset.sure = '1'; b.textContent = '⚠️ Yakin? Tekan sekali lagi'; setTimeout(() => { b.dataset.sure = ''; b.textContent = '🗑️ Hapus semua jawaban'; }, 3000); return; }
+    LK.data = {}; LK.save(); try { location.hash = 'lkpd'; } catch (e) { } location.reload();
+  };
+  // Tautan ke Materi bagian 4
+  root.addEventListener('click', e => { if (e.target.closest('[data-mi4]')) setTimeout(() => showMat(3), 50); });
+}
+
+function drawPola(no) {
+  const s = LK.get(`lk_o${no}_pola`, '');
+  $(`#lk_o${no}_pola`).innerHTML = s ? [...s].map(ch => ITEM[ch]).join('') : '<i>kosong</i>';
+}
+function lkShow(n) {
+  $$('#lkTabs button').forEach(b => b.classList.toggle('on', +b.dataset.lk === n));
+  $$('.lk-sec').forEach(s => s.classList.toggle('on', s.id === 'lk' + n));
+  if (n === 3) renderHasil();
+  $('#tab-lkpd').scrollIntoView({ behavior: 'smooth' });
+}
+const num = id => { const el = document.getElementById(id); if (!el) return NaN; const v = el.value.trim(); return v === '' ? NaN : +v; };
+function mark(id, ok) { const el = document.getElementById(id); if (el) { el.classList.toggle('ok', ok); el.classList.toggle('no', !ok); } return ok; }
+function needId() {
+  const ok = $('#lk_n1').value.trim() && $('#lk_kls').value.trim();
+  $('#lk_idErr').textContent = ok ? '' : 'Isi nama murid 1 dan kelas dulu, ya!';
+  if (!ok) $('#lk_n1').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  return !!ok;
+}
+
+/* ---------- Pemeriksaan LKPD 1 ---------- */
+function checkLK1(show) {
+  if (show && !needId()) { SFX.bad(); return null; }
+  let benar = 0, total = 0, kosong = 0;
+  LKPD1_BINTANG.forEach(([o, i], k) => {
+    const id = 'lk_b' + k, v = num(id); total++;
+    if (isNaN(v)) { kosong++; if (show) $(`#${id}_fb`).textContent = 'Belum diisi.'; return; }
+    const ok = mark(id, v === o * i); if (ok) benar++;
+    if (show) { $(`#${id}_fb`).innerHTML = ok ? `✅ Tepat! ${o} × ${i} = ${o * i}` : `❌ Coba lagi: ${o} baris, setiap baris ${i} bintang.`; $(`#${id}_fb`).className = 'lk-fb ' + (ok ? 'g' : 'r'); }
+  });
+  LKPD1_LEVEL.forEach(L => {
+    const fb = [], f = `lk_l${L.lv}`;
+    const items = [['p', L.bunga, 'prediksi bunga'], ['o', L.luar, 'loop luar'], ['i', L.dalam, 'loop dalam']].filter(x => x[1] !== null);
+    let salah = [];
+    items.forEach(([s, ans, nm]) => {
+      const v = num(`${f}_${s}`); total++;
+      if (isNaN(v)) { kosong++; salah.push(nm + ' belum diisi'); return; }
+      if (mark(`${f}_${s}`, v === ans)) benar++; else salah.push(nm);
+    });
+    if (show) {
+      const el = $(`#${f}_fb`);
+      if (!salah.length) { el.innerHTML = '✅ Semua tepat!'; el.className = 'lk-fb g'; }
+      else {
+        let hint = L.pola === 'kolom2' ? 'Hitung hanya petak hijau: tanam satu, lewati satu. Ada berapa petak hijau di tiap baris?' : L.pola === 'baris2' ? 'Baris ke-2 dan ke-4 kosong. Berapa baris yang ditanami, dan berapa bunga di tiap baris?' : 'Loop luar = baris, loop dalam = kolom.';
+        el.innerHTML = `❌ Cek lagi: ${salah.join(', ')}. ${hint}`; el.className = 'lk-fb r';
+      }
+    }
+  });
+  const res = { benar, total, kosong };
+  LK.set('lk1_res', res);
+  if (show) {
+    $('#lk1Score').innerHTML = `Benar <b>${benar}/${total}</b>${kosong ? ` · ${kosong} belum diisi` : ''}`;
+    if (benar === total) { SFX.ok(); boom(100); } else SFX.ding();
+  }
+  return res;
+}
+
+/* ---------- Pemeriksaan LKPD 2 ---------- */
+function checkLK2(show) {
+  if (show && !needId()) { SFX.bad(); return null; }
+  let benar = 0, total = 0, kosong = 0;
+  LKPD2_PESANAN.forEach(P => {
+    const f = `lk_o${P.no}`, pola = LK.get(f + '_pola', ''), u = num(f + '_u'), p = num(f + '_p'), t = num(f + '_t');
+    const salah = [];
+    total += 3;
+    // Pola + ulangan dinilai bersama: pola diulang u kali harus sama dengan isi satu piring
+    if (!pola || isNaN(u)) { kosong++; salah.push('pola dan ulangan belum lengkap'); }
+    else if (pola.repeat(u) === P.isi) { benar++; mark(f + '_u', true); } else { mark(f + '_u', false); salah.push('pola × ulangan belum sama dengan isi piring'); }
+    if (isNaN(p)) { kosong++; salah.push('jumlah piring belum diisi'); } else if (mark(f + '_p', p === P.piring)) benar++; else salah.push('jumlah piring');
+    if (isNaN(t)) { kosong++; salah.push('total belum diisi'); } else if (mark(f + '_t', t === P.piring * P.isi.length)) benar++; else salah.push('total camilan');
+    if (show) { const el = $(`#${f}_fb`); el.innerHTML = salah.length ? `❌ Cek lagi: ${salah.join(', ')}.` : `✅ Tepat! ${P.piring} piring × ${P.isi.length} camilan = ${P.piring * P.isi.length}`; el.className = 'lk-fb ' + (salah.length ? 'r' : 'g'); }
+  });
+  [0, 1].forEach(k => {
+    const n = num(`lk_a${k}_n`), g = num(`lk_a${k}_g`), c = num(`lk_a${k}_k`); total += 2;
+    let ok = 0;
+    if (isNaN(g)) kosong++; else if (mark(`lk_a${k}_g`, g === n * 4)) { benar++; ok++; }
+    if (isNaN(c)) kosong++; else if (mark(`lk_a${k}_k`, c === n)) { benar++; ok++; }
+    if (show) { const el = $(`#lk_a${k}_fb`); el.textContent = ok === 2 ? '✅' : `❌ gerak = ${n} × 4, kostum = ${n}`; el.className = 'lk-fb ' + (ok === 2 ? 'g' : 'r'); }
+  });
+  const o = +$('#lk_c_o b').textContent, i = +$('#lk_c_i b').textContent, pr = num('lk_c_pred'); total++;
+  if (isNaN(pr)) { kosong++; if (show) { $('#lk_c_fb').textContent = 'Tulis hitunganmu dulu.'; $('#lk_c_fb').className = 'lk-fb r'; } }
+  else { const ok = mark('lk_c_pred', pr === o * i); if (ok) benar++; if (show) { $('#lk_c_fb').innerHTML = ok ? `✅ Tepat! ${o} × ${i} = ${o * i}` : `❌ Ingat: loop luar × loop dalam (${o} × ${i}).`; $('#lk_c_fb').className = 'lk-fb ' + (ok ? 'g' : 'r'); } }
+  const reflOk = ['lk_r1', 'lk_r2', 'lk_r3', 'lk_r5'].every(id => $('#' + id).value.trim()) && LK.get('lk_feel', '');
+  const res = { benar, total, kosong, refl: !!reflOk };
+  LK.set('lk2_res', res);
+  if (show) {
+    $('#lk2Score').innerHTML = `Benar <b>${benar}/${total}</b>${kosong ? ` · ${kosong} belum diisi` : ''}${reflOk ? '' : ' · refleksi belum lengkap'}`;
+    if (benar === total && reflOk) { SFX.ok(); boom(100); } else SFX.ding();
+  }
+  return res;
+}
+
+/* ---------- Halaman hasil ---------- */
+function lkSummary() {
+  const r1 = checkLK1(false), r2 = checkLK2(false);
+  const names = [$('#lk_n1').value.trim(), $('#lk_n2').value.trim()].filter(Boolean).join(' & ') || '(belum diisi)';
+  const tot = r1.benar + r2.benar, max = r1.total + r2.total, nilai = Math.round(tot / max * 100);
+  return { r1, r2, names, kls: $('#lk_kls').value.trim() || '-', nilai, tot, max };
+}
+function renderHasil() {
+  const s = lkSummary(), d = new Date();
+  const tgl = d.toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' }) + ' ' + d.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });
+  const stars = s.nilai >= 90 ? 3 : s.nilai >= 70 ? 2 : s.nilai >= 40 ? 1 : 0;
+  const bintangGame = LKPD1_LEVEL.map(L => LK.get(`lk_l${L.lv}_s`, '') || '-').join(', ');
+  const bugs = LKPD1_LEVEL.map(L => LK.get(`lk_l${L.lv}_bug`, '')).filter(Boolean);
+  const feel = { senang: '😄 Senang', biasa: '🙂 Biasa', kurang: '😕 Kurang' }[LK.get('lk_feel', '')] || '-';
+  $('#lkHasil').innerHTML = `
+    <div class="lk-h-top"><div>${pikoSVG({ w: 90, mood: s.nilai >= 70 ? 'happy' : 'normal', arms: s.nilai >= 70 ? 'up' : 'down' })}</div>
+      <div><span class="pill">LKPD Digital · Perulangan Bercabang · Kelas 4</span><h2 style="font-size:28px;margin:6px 0">${esc(s.names)}</h2><p>Kelas ${esc(s.kls)} · ${tgl}</p></div>
+      <div class="lk-nilai"><b>${s.nilai}</b><span>nilai LKPD</span><div class="stars" style="font-size:26px">${[0, 1, 2].map(i => `<span class="${i < stars ? 'on' : ''}">⭐</span>`).join('')}</div></div></div>
+    <table class="id-table" style="margin-top:14px">
+      <tr><td>LKPD 1 · Tebak Bintang & Kebun Robot</td><td><b>${s.r1.benar}/${s.r1.total}</b> benar${s.r1.kosong ? ` (${s.r1.kosong} kosong)` : ''}</td></tr>
+      <tr><td>LKPD 2 · Pola, Animasi, Rancangan</td><td><b>${s.r2.benar}/${s.r2.total}</b> benar${s.r2.kosong ? ` (${s.r2.kosong} kosong)` : ''}</td></tr>
+      <tr><td>Bintang game Kebun level 1–6</td><td>${bintangGame}</td></tr>
+      <tr><td>Rancangan animasi</td><td>${$('#lk_c_actor').selectedOptions[0].text}: ulangi ${$('#lk_c_o b').textContent} × ulangi ${$('#lk_c_i b').textContent}</td></tr>
+      <tr><td>Bug yang ditemukan</td><td>${bugs.length ? bugs.map(esc).join('; ') : '-'}</td></tr>
+      <tr><td>Hal baru yang dipahami</td><td>${esc($('#lk_r1').value) || '-'}</td></tr>
+      <tr><td>Bug & cara memperbaiki</td><td>${esc($('#lk_r2').value) || '-'}</td></tr>
+      <tr><td>Kerja sama</td><td>${esc($('#lk_r3').value) || '-'}</td></tr>
+      <tr><td>Perasaan</td><td>${feel}</td></tr>
+      <tr><td>Target berikutnya</td><td>${esc($('#lk_r5').value) || '-'}</td></tr>
+      <tr><td>Skor kuis</td><td>${esc($('#lk_q1').value) || '-'} / ${esc($('#lk_q2').value) || '-'}</td></tr>
+    </table>
+    <p class="lk-tip" style="margin-top:10px">${s.nilai >= 70 ? 'Hebat! Tunjukkan halaman ini ke guru. 🎉' : 'Masih ada yang bisa diperbaiki. Kembali ke LKPD, cek kotak merah, lalu periksa lagi. 💪'}</p>`;
+  if (s.nilai >= 70) boom(80);
+}
+function lkSummaryText() {
+  const s = lkSummary();
+  return [`LKPD Digital BlockCode – Perulangan Bercabang`, `Nama: ${s.names} | Kelas: ${s.kls}`, `LKPD 1: ${s.r1.benar}/${s.r1.total} | LKPD 2: ${s.r2.benar}/${s.r2.total} | Nilai: ${s.nilai}`,
+    `Bintang game Kebun: ${LKPD1_LEVEL.map(L => LK.get(`lk_l${L.lv}_s`, '') || '-').join(', ')}`,
+    `Paham: ${$('#lk_r1').value}`, `Bug: ${$('#lk_r2').value}`, `Kerja sama: ${$('#lk_r3').value}`, `Perasaan: ${LK.get('lk_feel', '-')}`, `Target: ${$('#lk_r5').value}`, `Skor kuis: ${$('#lk_q1').value || '-'} / ${$('#lk_q2').value || '-'}`].join('\n');
 }
 boot();
 </script>
